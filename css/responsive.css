@@ -1,0 +1,57 @@
+@media screen and (max-width: 768px) {
+  .lp .convert-header .wrap,
+  .lp .content-promo,
+  .lp .vem .wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .lp .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lp .content-promo,
+  .lp .vem {
+    text-align: center;
+  }
+
+  .lp .big-title span {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .lp .convert-header .form-head,
+  .lp .vem .text-vem {
+    margin-top: 50px;
+  }
+
+  .lp .convert-header .content-head img {
+    max-height: 350px;
+  }
+
+  .lp .convert-header .form-head h1 {
+    font-size: 3.2rem;
+  }
+
+  .lp .content-promo h2,
+  .lp .vem .text-vem h2 {
+    font-size: 2.6rem;
+  }
+
+  .lp .content-promo p,
+  .lp .vem .text-vem p {
+    font-size: 1.6rem;
+  }
+
+  .lp .features {
+    grid-template-columns: 1fr;
+  }
+
+  .lp .big-title span {
+    font-size: 1.8rem;
+  }
+
+  .lp .vem .logo-vem img {
+    height: 150px;
+  }
+}

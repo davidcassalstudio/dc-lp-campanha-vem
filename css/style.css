@@ -218,6 +218,80 @@ img {
   max-width: 1200px;
   padding: 100px 20px;
   margin: 0 auto;
+
+  text-align: center;
+}
+
+.lp .convert-header .content-head img {
+  max-height: 650px;
+}
+
+.lp .convert-header .form-head h1 {
+  margin-bottom: 50px;
+
+  font-family: var(--title-font);
+  font-size: 4.2rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.lp .convert-header .form-head input {
+  width: 100%;
+  height: 55px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+
+  background: var(--support-color);
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+
+  font-family: var(--text-font);
+  font-size: 1.4rem;
+  letter-spacing: 0.075rem;
+  color: #f2f2f2;
+}
+
+.lp .convert-header .form-head input[type="submit"] {
+  width: 100%;
+  height: 75px;
+
+  background: var(--vem-color);
+  border: 1px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  letter-spacing: inherit;
+  color: #fff;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.lp .convert-header .form-head input[type="submit"]:hover {
+  box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+  transform: scale(1.05) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+}
+
+.lp .convert-header .form-head .div_PHN {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 4fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp .convert-header .form-head label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-family: var(--text-font);
+  font-size: 1.2rem;
+  line-height: 1.25em;
+  letter-spacing: 0.075rem;
+  text-align: left;
 }
 
 .lp .content-promo {
@@ -521,4 +595,102 @@ img {
 .showBtn {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+/* Formulário Dinamize */
+
+form.formIntegration2 .div_PHN.hidden_DDI div.div_PHN_DDI {
+  width: 0;
+  display: none;
+}
+form.formIntegration2 .div_PHN.hidden_DDI div.div_PHN_NUM {
+  width: 100%;
+  display: inline-block;
+}
+form.formIntegration2 .field-error {
+  border-color: #cc0000 !important;
+}
+form.formIntegration2 .g-recaptcha {
+  margin-bottom: 5px;
+}
+
+form.formIntegration2 .DinamizeDivMessageSuccess,
+form.formIntegration2 .DinamizeDivMessageAlert,
+form.formIntegration2 .DinamizeDivMessageError,
+form.formIntegration2 .DinamizeDivCaptchaMessage {
+  display: none;
+  margin: 0px 0px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-family: arial;
+  padding: 15px;
+}
+
+form.formIntegration2 .DinamizeDivMessageSuccess {
+  background-color: rgb(20, 118, 18);
+}
+form.formIntegration2 .DinamizeDivMessageAlert,
+form.formIntegration2 .DinamizeDivMessageError,
+form.formIntegration2 .DinamizeDivCaptchaMessage {
+  background-color: #ac0000;
+}
+
+form.formIntegration2 .spinner {
+  display: none;
+}
+
+form.formIntegration2.style1 .spinner {
+  display: none;
+  bottom: 0;
+  height: 18px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+form.formIntegration2.style1 .spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+form.formIntegration2.style1 .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+form.formIntegration2.style1 .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+form.formIntegration2.style2 .spinner {
+  display: none;
+  bottom: 0;
+  height: 18px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+form.formIntegration2.style2 .spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+form.formIntegration2.style2 .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+form.formIntegration2.style2 .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
 }
