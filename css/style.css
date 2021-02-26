@@ -1,0 +1,197 @@
+/* Start */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  /* Variáveis */
+  --base-color: #131219;
+  --support-color: #15141b;
+  --vem-color: #18b8c4;
+  --title-font: "Krona One";
+  --text-font: "Barlow Condensed", sans-serif;
+}
+
+::selection {
+  background: var(--base-color);
+  color: var(--vem-color);
+}
+
+:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+:focus {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  position: relative;
+
+  background: #fff;
+
+  font-family: var(--text-font);
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 500;
+  color: var(--base-color);
+
+  z-index: 10;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+
+  transition: all 0.25s linear;
+}
+
+/* Animações */
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+  transform: translate3d(0, -50px, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+[data-opacity] {
+  opacity: 1;
+  transition: 0.9s;
+}
+
+[data-opacity].fade-opacity {
+  transform: translateY(120px);
+  transition: 0.9s;
+}
+
+/* Home VEM */
+.home-page .main-header .image-banner {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.home-page .main-header .logo-studio {
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 50px auto;
+
+  text-align: center;
+}
+
+.home-page .content h1 {
+  max-width: 790px;
+  padding: 0 20px;
+  margin: 100px auto 50px;
+
+  font-family: var(--title-font);
+  font-size: 4.2rem;
+  line-height: 1.25em;
+  text-align: center;
+}
+
+.home-page .content p {
+  max-width: 595px;
+  padding: 0 20px;
+  margin: 0 auto 30px;
+
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+  text-align: center;
+}
+
+.home-page .links {
+  padding: 0 20px;
+  margin: 0 auto 50px;
+}
+
+.home-page .links .cta-ghost {
+  display: block;
+  max-width: 320px;
+  height: 65px;
+  margin: 0 auto 20px;
+
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  line-height: 6.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: var(--vem-color);
+}
+
+.home-page .links .cta-block {
+  display: block;
+  max-width: 320px;
+  height: 65px;
+  margin: 0 auto 20px;
+
+  background: var(--vem-color);
+  border-radius: 3px;
+  border: 2px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.3rem;
+  line-height: 6.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.home-page .main-footer {
+  padding: 20px;
+  margin-top: 100px;
+
+  background: var(--base-color);
+}
+
+.home-page .main-footer span {
+  display: block;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #fff;
+  letter-spacing: 0.075rem;
+  text-align: center;
+}
+
+.home-page .main-footer span a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
