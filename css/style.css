@@ -57,6 +57,10 @@ body {
   transition: all 0.25s linear;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Animações */
 [data-anime] {
   opacity: 0;
