@@ -26,15 +26,23 @@
       <!-- Cabeçalho -->
       <header class="main-header">
         <div class="logo-studio">
-          <img src="images/logo-david-cassal-preto.svg" alt="Logotipo do David Cassal Studio" load="lazy">
+          <img
+            src="images/logo-david-cassal-preto.svg"
+            alt="Logotipo do David Cassal Studio"
+            load="lazy"
+          />
         </div>
         <div class="image-banner">
-          <img src="images/banner-vem.webp" alt="Logotipo da campanha com ilustração de pessoas se ajudando a subir os degraus de um gráfico" load="lazy">
+          <img
+            src="images/banner-vem.webp"
+            alt="Logotipo da campanha com ilustração de pessoas se ajudando a subir os degraus de um gráfico"
+            load="lazy"
+          />
         </div>
       </header>
 
       <!-- Conteúdo -->
-      <section class="content">
+      <section class="content" data-anime="top">
         <h1>Todos juntos para vencer este momento!</h1>
 
         <p>
@@ -50,7 +58,7 @@
       </section>
 
       <!-- Links -->
-      <article class="links">
+      <article class="links" data-anime="top">
         <a href="#" title="" target="_blank" class="cta-ghost"
           >Crie sua loja online</a
         >
@@ -74,5 +82,15 @@
         <span>Copyright &copy; 2021. Todos os direitos reservados.</span>
       </footer>
     </main>
+
+    <img
+      src="images/icone-topo.svg"
+      alt="Ir ao topo"
+      id="scrollToTopBtn"
+      onclick="backTop()"
+    />
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>

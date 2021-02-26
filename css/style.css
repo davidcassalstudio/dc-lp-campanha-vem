@@ -155,6 +155,8 @@ img {
   text-decoration: none;
   text-align: center;
   color: var(--vem-color);
+
+  transition: all 0.5s ease-in-out;
 }
 
 .home-page .links .cta-block {
@@ -174,16 +176,315 @@ img {
   text-decoration: none;
   text-align: center;
   color: #fff;
+
+  transition: all 0.5s ease-in-out;
 }
 
-.home-page .main-footer {
+.home-page .links .cta-ghost:hover,
+.home-page .links .cta-block:hover {
+  box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+  transform: scale(1.05) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Landing Pages Internas */
+.lp .logo-header {
+  width: 100%;
+  height: auto;
+  padding: 50px 20px 0;
+
+  background: var(--base-color);
+
+  text-align: center;
+}
+
+.lp .convert-header {
+  width: 100%;
+  height: auto;
+
+  background: var(--base-color);
+
+  color: #fff;
+}
+
+.lp .convert-header .wrap {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1200px;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.lp .content-promo {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1200px;
+  height: auto;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.lp .content-promo h2 {
+  margin-bottom: 50px;
+
+  font-family: var(--title-font);
+  font-size: 3.6rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.lp .content-promo p {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .content-promo p span {
+  font-weight: 700;
+  color: var(--vem-color);
+}
+
+.lp .content-promo .price {
+  display: block;
+
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .content-promo .obs {
+  display: block;
+
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .image-promo img {
+  box-shadow: 10px 10px 0 var(--vem-color);
+  border-radius: 3px;
+}
+
+.lp .features {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1200px;
+  height: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.lp .features h3 {
+  margin-bottom: 20px;
+
+  font-family: var(--title-font);
+  font-size: 2.4rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.lp .features p {
+  margin-bottom: 30px;
+
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .cta a {
+  display: block;
+  max-width: 320px;
+  height: 75px;
+  margin: 50px auto 100px;
+
+  background: var(--vem-color);
+  border-radius: 3px;
+  border: 2px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  line-height: 7.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.lp .cta a:hover {
+  box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+  transform: scale(1.05) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+}
+
+.lp .big-title {
+  width: 100%;
+  height: auto;
+  padding: 100px 20px;
+
+  background: var(--vem-color);
+}
+
+.lp .big-title span {
+  display: block;
+
+  font-family: var(--title-font);
+  font-size: 5.6rem;
+  line-height: 1.25em;
+  color: #fff;
+  text-align: center;
+}
+
+.lp .vem {
+  width: 100%;
+  height: auto;
+
+  background: var(--base-color);
+
+  color: #fff;
+}
+
+.lp .vem .wrap {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1200px;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+.lp .vem .logo-vem {
+  text-align: center;
+}
+
+.lp .vem .logo-vem img {
+  height: 250px;
+}
+
+.lp .vem .text-vem h2 {
+  margin-bottom: 50px;
+
+  font-family: var(--title-font);
+  font-size: 3.6rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.lp .vem .text-vem p {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .vem .text-vem p:last-child {
+  margin-bottom: 0;
+}
+
+.lp .vem .text-vem p span {
+  font-weight: 700;
+  color: var(--vem-color);
+}
+
+.lp .contact {
+  max-width: 485px;
+  padding: 100px 20px 0;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.lp .contact img {
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.lp .contact h3 {
+  margin-bottom: 20px;
+
+  font-family: var(--title-font);
+  font-size: 2.4rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.lp .contact h3 span {
+  display: block;
+}
+
+.lp .contact h3 span:first-child {
+  color: var(--base-color);
+}
+
+.lp .contact p {
+  margin-bottom: 20px;
+
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.lp .contact .cta {
+  display: inline-block;
+  height: 75px;
+  padding: 0 35px;
+  margin: 0 auto;
+
+  background: var(--vem-color);
+  border-radius: 3px;
+  border: 2px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  line-height: 7.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.lp .contact .cta:hover {
+  box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+  transform: scale(1.05) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* Rodapé */
+.main-footer {
   padding: 20px;
   margin-top: 100px;
 
   background: var(--base-color);
 }
 
-.home-page .main-footer span {
+.main-footer span {
   display: block;
 
   font-size: 1.4rem;
@@ -194,8 +495,30 @@ img {
   text-align: center;
 }
 
-.home-page .main-footer span a {
+.main-footer span a {
   font-weight: 500;
   color: #fff;
   text-decoration: none;
+}
+
+/* Botão Voltar ao Topo */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  width: 32px;
+  height: 32px;
+
+  pointer-events: all;
+  opacity: 0;
+  transform: translateY(100px);
+  z-index: 100;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.showBtn {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
