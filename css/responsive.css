@@ -29,7 +29,8 @@
     max-height: 350px;
   }
 
-  .lp .convert-header .form-head h1 {
+  .lp .convert-header .form-head h1,
+  .tk-you .content h1 {
     font-size: 3.2rem;
   }
 
@@ -43,6 +44,15 @@
     font-size: 1.6rem;
   }
 
+  .lp .cta a,
+  .lp .contact .cta {
+    font-size: 1.3rem;
+  }
+
+  .lp .image-promo img {
+    max-width: 80%;
+  }
+
   .lp .features {
     grid-template-columns: 1fr;
   }
@@ -53,5 +63,28 @@
 
   .lp .vem .logo-vem img {
     height: 150px;
+  }
+
+  .lp .contact img {
+    height: 250px;
+  }
+
+  .main-footer span {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .lp .cta a,
+  .lp .contact .cta {
+    max-width: 280px;
+  }
+
+  .lp .contact img {
+    height: 185px;
+  }
+
+  .lp .contact h3 {
+    font-size: 1.8rem;
   }
 }

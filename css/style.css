@@ -550,6 +550,78 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
+/* Thank You Page */
+.tk-you .main-header {
+  max-width: 1200px;
+  padding: 50px 20px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.tk-you .main-header .image-banner img {
+  margin-top: 50px;
+}
+
+.tk-you .content {
+  max-width: 590px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.tk-you .content h1 {
+  margin-bottom: 50px;
+
+  font-family: var(--title-font);
+  font-size: 4.2rem;
+  line-height: 1.25em;
+  color: var(--vem-color);
+}
+
+.tk-you .content p {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.075rem;
+}
+
+.tk-you .content p a {
+  color: var(--vem-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tk-you .content .cta-block {
+  display: inline-block;
+  height: 75px;
+  padding: 0 35px;
+  margin: 0 auto;
+
+  background: var(--vem-color);
+  border-radius: 3px;
+  border: 2px solid var(--vem-color);
+
+  font-family: var(--title-font);
+  font-size: 1.6rem;
+  line-height: 7.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.tk-you .content .cta-block:hover {
+  box-shadow: 0 8px 16px 0 rgba(39, 17, 45, 0.1);
+
+  transform: scale(1.05) translate(0px, -4px);
+  transition: all 0.5s ease-in-out;
+}
+
 /* Rodapé */
 .main-footer {
   padding: 20px;
